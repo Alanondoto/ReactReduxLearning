@@ -3,8 +3,25 @@
 const App = () => {
   return (
     <div>
-      <div>one div</div>
-      <div className="App">
+      <Header />
+      <Technologies />
+    </div>
+  );
+}
+
+const Header = () => {
+  return (
+    <div>
+      <a href='#s'>Home</a>
+      <a href='#s'>News Feed</a>
+      <a href='#s'>Messages</a>
+    </div>
+  );
+}
+
+const Technologies = () => {
+  return (
+    <div>
         <ul>
           <li>css</li>
           <li>html</li>
@@ -12,8 +29,8 @@ const App = () => {
           <li>react</li>
         </ul>
       </div>
-    </div>
   );
 }
 
 export default App;
+
