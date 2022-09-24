@@ -1,15 +1,11 @@
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css'
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
     return (
-        <div>
-        <div>
-        <img src='https://html5css.ru/css/img_lights.jpg' alt='background' />
-        </div>
-        <div>
-          ava + description
-        </div>
+      <div>
+        <ProfileInfo />
         <MyPosts />
       </div>
     )
