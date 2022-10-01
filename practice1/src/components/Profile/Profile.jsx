@@ -2,11 +2,11 @@ import MyPosts from './MyPosts/MyPosts';
 // import s from './Profile.module.css'
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = (props) => {
+const   Profile = (props) => {
     return (
       <div>
         <ProfileInfo />
-        <MyPosts updateNewPostText={props.updateNewPostText} posts={props.profilePage.posts} newPostText={props.profilePage.newPostText} addPost={props.addPost}/>
+        <MyPosts dispatch={props.dispatch} posts={props.profilePage.posts} newPostText={props.profilePage.newPostText} />
       </div>
     )
 }
