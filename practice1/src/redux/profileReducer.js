@@ -21,10 +21,10 @@ const profileReducer = (state = initialState, action) => {
       };
       state.posts.push(newPost);
       state.newPostText = '';
-      break;
+      return state;
     case UPDATE_NEW_POST_TEXT:
       state.newPostText = action.newText;
-      break;
+      return state;
     default:
       return state;
   }
