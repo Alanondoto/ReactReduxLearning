@@ -1,6 +1,6 @@
 import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
-import Sidebar from "./Sidebar/Sidebar";
+// import Sidebar from "./Sidebar/Sidebar";
 
 const Navbar = (props) => {
     return (
@@ -30,7 +30,7 @@ const Navbar = (props) => {
             isActive ? s.active : undefined
           }>Settings</NavLink>
         </div>
-        <Sidebar friends={props.state.friends}/>
+        {/*<Sidebar friends={props.state.friends}/>*/}
       </nav>
     )
 }

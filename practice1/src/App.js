@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-// import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import {Route, Routes} from "react-router-dom";
 import News from "./components/News/News";
@@ -12,7 +12,7 @@ const App = () => {
   return (
       <div className='app-wrapper'>
         <Header />
-        {/*<Navbar state={props.state.sidebar} />*/}
+        <Navbar />
         <div className='app-wrapper-content'>
           <Routes>
             <Route path='/profile' element={<Profile />}/>
