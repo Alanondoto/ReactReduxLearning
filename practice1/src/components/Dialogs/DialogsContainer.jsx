@@ -5,6 +5,7 @@ import React from "react";
 import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogsReducer";
 import Dialogs from "./Dialogs";
 import StoreContext from "../../storeContext";
+import {connect} from "react-redux";
 
 const DialogsContainer = () => {
 
@@ -23,5 +24,11 @@ const DialogsContainer = () => {
     }
   </StoreContext.Consumer>
 }
+
+let f1 = () => {
+
+}
+
+const SuperDialogsContainer = connect()(Dialogs);
 
 export default DialogsContainer;
