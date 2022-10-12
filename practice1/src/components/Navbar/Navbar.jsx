@@ -30,6 +30,11 @@ const Navbar = (props) => {
             isActive ? s.active : undefined
           }>Settings</NavLink>
         </div>
+        <div className={s.item}>
+          <NavLink to='/users' className={({ isActive }) =>
+            isActive ? s.active : undefined
+          }>Users</NavLink>
+        </div>
         {/*<Sidebar friends={props.state.friends}/>*/}
       </nav>
     )
