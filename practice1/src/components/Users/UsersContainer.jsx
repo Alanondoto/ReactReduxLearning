@@ -57,29 +57,4 @@ let mapStateToProps = (state) => {
   }
 }
 
-let mapDispatchToProps = (dispatch) => {
-  return {
-    follow: (userId) => {
-      dispatch(follow(userId))
-    },
-    unfollow: (userId) => {
-      dispatch(unfollow(userId))
-    },
-    setUsers: (users) => {
-      dispatch(setUsers(users))
-    },
-    setCurrentPage: (pageNumber) => {
-      dispatch(setCurrentPage(pageNumber))
-    },
-    setTotalUsersCount: (totalCount) => {
-      dispatch(setTotalUsersCount(totalCount))
-    },
-    toggleIsFetching: (isFetching) => {
-      dispatch(toggleIsFetching(isFetching))
-    }
-  }
-}
-
-
-
 export default connect(mapStateToProps, {follow, unfollow, setUsers, setCurrentPage, setTotalUsersCount, toggleIsFetching} )(UsersContainer);
