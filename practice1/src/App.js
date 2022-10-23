@@ -31,5 +31,3 @@ const App = () => {
 }
 
 export default App;
-
-// redux-thunk 2

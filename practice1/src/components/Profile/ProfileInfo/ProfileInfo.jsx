@@ -12,7 +12,7 @@ const ProfileInfo = (props) => {
         <img src='https://html5css.ru/css/img_lights.jpg' alt='background' />
       </div>
       <div className={s.descriptionBlock}>
-        <img src={props.profile.photos.large} />
+        <img src={props.profile.photos.large} alt={'img'}/>
         {props.profile.aboutMe}
         ava + description
       </div>
