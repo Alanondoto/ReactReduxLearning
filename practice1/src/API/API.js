@@ -31,7 +31,7 @@ export const usersAPI = {
 
 export const headerAPI = {
   authMe: () => {
-    return instance.get(`https://social-network.samuraijs.com/api/1.0/auth/me`)
+    return instance.get(`auth/me`)
       .then(response => {
         return response.data
       })
@@ -40,7 +40,7 @@ export const headerAPI = {
 
 export const profileAPI = {
   setUserProfile: (userId) => {
-    return axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${userId}`)
+    return instance.get(`profile/${userId}`)
     .then(response => {
       return response.data
     })
