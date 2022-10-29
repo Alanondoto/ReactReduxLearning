@@ -73,5 +73,3 @@ export const updateStatus = (status) => (dispatch) => {
 }
 
 export default profileReducer;
-
-// тест
