@@ -9,9 +9,14 @@ import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileInfo/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from './components/Login/Login';
+import React from 'react';
 
-const App = () => {
-  return (
+class App extends React.Component {
+  componentDidMount() {
+    this.props.authMe();
+  }
+  render() {
+    return (
       <div className='app-wrapper'>
         <HeaderContainer />
         <Navbar />
@@ -30,6 +35,7 @@ const App = () => {
         </div>
       </div>
   );
+  }
 }
 
 export default App;
