@@ -10,12 +10,18 @@ import ProfileContainer from "./components/Profile/ProfileInfo/ProfileContainer"
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from './components/Login/Login';
 import React from 'react';
+import { connect } from 'react-redux';
+import {initializeApp} from './redux/appReducer'
+import Preloader from './components/Common/Preloader/Preloader';
 
 class App extends React.Component {
   componentDidMount() {
-    this.props.authMe();
+    this.props.initializeApp();
   }
   render() {
+    if (!this.props.initialized) {
+      return <Preloader />
+    }
     return (
       <div className='app-wrapper'>
         <HeaderContainer />
@@ -38,4 +44,8 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  initialized: state.app.initialized
+})
+
+export default connect( mapStateToProps, {initializeApp} )( App );
