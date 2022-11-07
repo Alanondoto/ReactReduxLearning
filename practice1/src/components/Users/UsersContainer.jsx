@@ -67,3 +67,5 @@ export default compose(
     {followUser, unfollowUser, setCurrentPage, toggleFollowingInProgress, getUsers} ),
   withAuthRedirect
 )(UsersContainer)
+
+// test
