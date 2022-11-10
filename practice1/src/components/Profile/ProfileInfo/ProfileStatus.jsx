@@ -51,4 +51,6 @@ class ProfileStatus extends React.Component {
     }
 }
 
+// LOOK PREV
+
 export default ProfileStatus;
