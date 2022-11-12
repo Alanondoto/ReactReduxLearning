@@ -9,6 +9,8 @@ const maxLength10 = maxLengthCreator(10)
 
 const MyPosts = (props) => {
 
+  
+
   let postsElements = props.posts.map(p => <Post likesCount={p.likesCount} message={p.message} />);
 
   let onAddPost = (values) => {
